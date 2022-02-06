@@ -1,0 +1,4 @@
+﻿Rozpoczęto kompilację...
+1>------ Kompilacja rozpoczęta: Projekt: ksiazkoczytacz, Konfiguracja: Debug Any CPU ------
+1>C:\Users\pkolo\source\repos\ksiazkoczytacz\ksiazkoczytacz\MainWindow.xaml.cs(79,21,79,24): error CS8370: Funkcja „tworzenie obiektu z typem docelowym” nie jest dostępna w języku C# 7.3. Użyj języka w wersji 9.0 lub nowszej.
+========== Kompilacja: 0 zakończono powodzeniem, 1 zakończono niepowodzeniem, 0 zaktualizowano, 0 pominięto ==========

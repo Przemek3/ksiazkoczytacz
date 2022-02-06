@@ -1,0 +1,22 @@
+﻿<Window x:Class="ksiazkoczytacz.KtoreStrony"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        KeyDown="FunkcjeKlawiaturowe"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ksiazkoczytacz"
+        mc:Ignorable="d"
+        Title="KtoreStrony" Height="400" Width="400">
+    <Grid>
+        <TextBlock Text="Z których stron książki pobrać słówka?" HorizontalAlignment="Left" Margin="59,28,0,0" VerticalAlignment="Top" Width="268" Height="87" FontSize="24" TextWrapping="WrapWithOverflow"
+                   TextAlignment="Center"/>
+        <Button Content="Anuluj" HorizontalAlignment="Left" Margin="42,294,0,0" VerticalAlignment="Top" Width="121" Height="46" FontSize="20" Click="bAnuluj"/>
+        <Button Content="Zatwierdź" HorizontalAlignment="Left" Margin="233,294,0,0" VerticalAlignment="Top" Width="121" Height="46" FontSize="20" Click="bZatwierdz"/>
+        <TextBox PreviewTextInput="PreviewTextInput" HorizontalAlignment="Left" Height="45" Margin="233,129,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="121" FontSize="30" TextAlignment="Center" x:Name="TXTzacznijOd"/>
+        <TextBox PreviewTextInput="PreviewTextInput" HorizontalAlignment="Left" Height="45" Margin="233,194,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="121" FontSize="30" TextAlignment="Center" x:Name="TXTileStron"/>
+        <Label Content="Zacznij od:" HorizontalAlignment="Left" Margin="42,129,0,0" VerticalAlignment="Top" Height="45" Width="110" FontSize="20"/>
+        <Label Content="Ile stron?" HorizontalAlignment="Left" Margin="42,194,0,0" VerticalAlignment="Top" Height="45" Width="110" FontSize="20"/>
+
+
+    </Grid>
+</Window>
