@@ -41,21 +41,21 @@ namespace ksiazkoczytacz
         {
             Parser.Parsuj();
 
-            wyswietlacz.Text = "";
+            //wyswietlacz.Text = "";
             
             using(naukaSlowekEntities context = new naukaSlowekEntities())
             {
                 doNauczenia slowo = context.doNauczenia.FirstOrDefault(x => x.polski == "by");
                 foreach (doNauczenia item in Parser.tablica)
                 {
-                    wyswietlacz.Text += item.polski + '\n';
+                    //wyswietlacz.Text += item.polski + '\n';
                     slowo = context.doNauczenia.FirstOrDefault(x => x.angielski == item.angielski);
                     if (slowo == null)
                     {
                         slowo = new doNauczenia { angielski = item.angielski, polski = item.polski, liczbaDobrych = 0 };
                         context.doNauczenia.Add(slowo);
                     }
-                    else wyswietlacz.Text = "Takie słowo już jest";
+                    //else wyswietlacz.Text = "Takie słowo już jest";
                 }
                 context.SaveChanges();
             }
@@ -76,7 +76,7 @@ namespace ksiazkoczytacz
         private async Task tl()
         {
             await myTranslator.Translate();
-            wyswietlacz.Text = myTranslator.odpowiedz;
+            //wyswietlacz.Text = myTranslator.odpowiedz;
         }
 
         private void bOtworzSlowka(object sender, RoutedEventArgs e)

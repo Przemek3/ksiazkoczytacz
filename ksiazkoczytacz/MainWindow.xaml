@@ -6,43 +6,42 @@
         xmlns:local="clr-namespace:ksiazkoczytacz"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
-        Background="DarkCyan"/>
-<Grid>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-        <ColumnDefinition Width="*"/>
-    </Grid.ColumnDefinitions>
-    <Grid.RowDefinitions>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="3*"/>
-        <RowDefinition Height="3*"/>
-    </Grid.RowDefinitions>
-    <RichTextBox Margin="10"
+        Background="DarkCyan">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <RichTextBox Margin="10"
                      Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" >
-        <FlowDocument>
-            <Paragraph>
-                <Run Text="RichTextBox" x:Name="wyswietlacz"/>
-            </Paragraph>
-        </FlowDocument>
-    </RichTextBox>
-    <Button Content="Nauka Słówek" Style="{StaticResource menuButton}"
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox" x:Name="wyswietlacz"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Nauka Słówek" Style="{StaticResource menuButton}"
                 Click="bOtworzSlowka"
                 Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1"/>
-    <Button Content="Analiza pobranych słówek" Style="{StaticResource menuButton}" 
+        <Button Content="Analiza pobranych słówek" Style="{StaticResource menuButton}" 
                 Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="1" />
-    <Button Content="Pobierz z PDF" Style="{StaticResource menuButton}" 
+        <Button Content="Pobierz z PDF" Style="{StaticResource menuButton}" 
                 Click="bPobierzZPDF"
                 Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="1" />
-    <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
-        <Button Style="{StaticResource settingsButton}" Click="btnUstawienia">
-            <Image Source="C:/Users/pkolo/source/repos/ksiazkoczytacz/ksiazkoczytacz/Pictures/settings.png"/>
-        </Button>
-        <Button Style="{StaticResource settingsButton}">
-            <Image Source="C:/Users/pkolo/source/repos/ksiazkoczytacz/ksiazkoczytacz/Pictures/help.png" />
-        </Button>
-    </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Style="{StaticResource settingsButton}" Click="btnUstawienia">
+                <Image Source="C:/Users/pkolo/source/repos/ksiazkoczytacz/ksiazkoczytacz/Pictures/settings.png"/>
+            </Button>
+            <Button Style="{StaticResource settingsButton}">
+                <Image Source="C:/Users/pkolo/source/repos/ksiazkoczytacz/ksiazkoczytacz/Pictures/help.png" />
+            </Button>
+        </StackPanel>
+    </Grid>
 
-
-</Grid>
-
+</Window>
