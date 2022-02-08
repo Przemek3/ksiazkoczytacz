@@ -12,8 +12,8 @@ Na samą aplikację składają się:
 niż w pierwotnej wersji odpytywacza)
 
 Przy okazji jej pisania stworzyłem również:
--wyciąganie słówek ze strony internetowej dla różnych poziomów języka angielskiego (aplikacja też będzie ich uczyć). W ustawieniach można zaznaczyć nasz poziom języka
+- wyciąganie słówek ze strony internetowej dla różnych poziomów języka angielskiego (aplikacja też będzie ich uczyć). W ustawieniach można zaznaczyć nasz poziom języka
 i z góry wykluczyć część słówek,
--Prosty tłumacz słówek z wykorzystaniem Azure.
--Korzystanie z bazy danych przy pomocy Entity Framework (w celach edukacyjnych, obecnie szybsze wydaje mi się korzystanie z prostych posortowanych plików .csv/.txt).
--Proste testy jednostkowe w roli przypomnienia
+- Prosty tłumacz słówek z wykorzystaniem Azure.
+- Korzystanie z bazy danych przy pomocy Entity Framework (w celach edukacyjnych, obecnie szybsze wydaje mi się korzystanie z prostych posortowanych plików .csv/.txt).
+- Proste testy jednostkowe w roli przypomnienia
