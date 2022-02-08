@@ -23,3 +23,12 @@ i z góry wykluczyć część słówek,
 Z chęcią opowiedziałbym o całej aplikacji podczas rozmowy. Część funkcjonalności jest obecnie zablokowana: np. możliwość wyboru po wybraniu liczby parsowanych stron,
 pierwszej i kliknięciu ok. Aplikacja współpracuje na ten moment ze ścieżkami do plików na moim komputerze. Kiedy skończę jej główne pierwotne funkcjonalności
 zamierzam uczynić ją kompaktową.
+
+Książkoczytacz- Zawiera główne okna aplikacji oraz wszystkie klasy z których korzysta.
+
+Konsolka (odpytywacz) - aplikacja odpowiadająca za odpytywanie. Działa w wierszu poleceń. Pobiera słówka z bazy danych, przydziela je do znanych bądź nie po odpowiedniej liczbie
+dobrych odpowiedzi. Otwierana jest z aplikacji książkoczytacz. W osobnym folderze, ponieważ uznałem, że dobrze działa w wierszu poleceń, a tak było łatwiej otworzyć.
+
+parsujStrone - aplikacja służąca do przenoszenia słówek ze strony internetowej do plików tekstowych (tak tworzyłem bazę poziomów).
+
+zExcelaDoBazy - udało mi się znaleźć plik csv będący słownikiem języka angielskiego. Na ten moment tylko go trochę przerabiam.
